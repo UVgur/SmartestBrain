@@ -1,0 +1,6 @@
+[
+    {"heroku check": "heroku addons"},
+    {"heroku pg": "heroku pg:psql"},
+    {"login": "CREATE TABLE login(id serial PRIMARY KEY, hash VARCHAR(100) NOT NULL, email text UNIQUE NOT NULL);"},
+    {"users": "CREATE TABLE users(id serial PRIMARY KEY, name VARCHAR(100), pet VARCHAR(100) , email text UNIQUE NOT NULL, entries BIGINT DEFAULT 0 , age BIGINT DEFAULT 0, joined TIMESTAMP NOT NULL);"}
+]
